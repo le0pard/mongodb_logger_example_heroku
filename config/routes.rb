@@ -1,6 +1,10 @@
 ExampleMongodbLogger::Application.routes.draw do
   
-  resources :tests
+  resources :tests do
+    collection do
+      get :exception
+    end
+  end
   
   mount MongodbLogger::Server.new, :at => "/mongodb"
   
