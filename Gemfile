@@ -9,7 +9,6 @@ gem 'sqlite3'
 gem 'mongodb_logger', '~> 0.2.3'
 gem 'json'
 gem 'pg'
-gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
