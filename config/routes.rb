@@ -2,6 +2,8 @@ ExampleMongodbLogger::Application.routes.draw do
   
   resources :tests
   
+  mount MongodbLogger::Server.new, :at => "/mongodb"
+  
   root :to => 'tests#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
