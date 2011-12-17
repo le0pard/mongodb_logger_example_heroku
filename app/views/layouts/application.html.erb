@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ExampleMongodbLogger</title>
+  <title>MongodbLogger Example</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+    <div id="toolBar" class="container">
+      <div class="row">
+        <div class="four columns">
+          <h1><%= link_to "MongodbLogger Example", root_path %></h1>
+        </div>
+        <div class="eight columns hide-on-phones">
+        	<strong class="right">
+        	  <%=link_to "MongodbLogger Web", mongodb_path %>
+        		<a href="https://github.com/le0pard/mongodb_logger_example_heroku">Sources of application</a>
+        		<a href="http://mongodb-logger.catware.org" class="small green nice button src-download">MongodbLogger gem</a>
+        	</strong>
+        </div>
+      </div>
+    </div>
+
+    <%= yield %>
 
 </body>
 </html>

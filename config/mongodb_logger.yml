@@ -1,6 +1,6 @@
 production:
   database: app2071501
-  capsize: <%= 15.megabytes %>
+  capsize: <%= 12.megabytes %>
   host: staff.mongohq.com
   port: 10039
   replica_set: true

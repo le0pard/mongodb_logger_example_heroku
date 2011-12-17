@@ -19,6 +19,7 @@ end
 
 group :development do
   gem 'sqlite3'
+  gem "zurb-foundation"
 end
 
 gem 'jquery-rails'
