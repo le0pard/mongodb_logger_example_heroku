@@ -1,0 +1,8 @@
+production:
+  database: app2071501
+  capsize: <%= 15.megabytes %>
+  host: staff.mongohq.com
+  port: 10039
+  replica_set: true
+  username: heroku
+  password: heroku123
