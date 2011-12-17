@@ -8,6 +8,7 @@ gem 'rails', '3.1.3'
 gem 'mongodb_logger', '~> 0.2.3'
 gem 'json'
 gem 'pg'
+gem "zurb-foundation"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,7 +20,6 @@ end
 
 group :development do
   gem 'sqlite3'
-  gem "zurb-foundation"
 end
 
 gem 'jquery-rails'
