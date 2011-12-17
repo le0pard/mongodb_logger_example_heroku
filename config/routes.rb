@@ -6,7 +6,7 @@ ExampleMongodbLogger::Application.routes.draw do
     end
   end
   
-  mount MongodbLogger::Server.new, :at => "/mongodb"
+  mount MongodbLogger::Server.new, :at => "/mongodb", :as => :mongodb
   
   root :to => 'tests#index'
   # The priority is based upon order of creation:

@@ -1,5 +1,25 @@
 <h1>Hello</h1>
 
+<%=link_to "MongodbLogger Web", mongodb_path %>
+Login: admin
+Password: password
+
 <%=link_to "Log extra information", new_test_path %>
 <%=link_to "Log exceptions", exception_tests_path %>
 
+<%= form_tag tests_path, :multipart => true do %>
+  <input type="hidden" name="MAX_FILE_SIZE" value="512000" />
+  
+  <%= label_tag 'name', "Name" %>
+  <%= text_field_tag 'name' %>
+  
+  <%= label_tag 'password', "Password" %>
+  <%= password_field_tag 'password' %>
+  
+  <%= label_tag 'count', "Count"%>
+  <%= select_tag "count", "<option>1</option><option>2</option><option>3</option><option>4</option>".html_safe %>
+  
+  <%= label_tag 'avatar', "Avatar" %>
+  <%= file_field_tag 'avatar' %>
+  
+<% end %>
