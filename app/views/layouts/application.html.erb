@@ -22,6 +22,19 @@
         </div>
       </div>
     </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns centered">
+          <%if notice %>
+            <div class="alert-box success"><%= notice %> <a href="#" class="close alert-close">×</a></div>
+          <%end%>
+          <%if alert %>
+            <div class="alert-box error"><%= alert %> <a href="#" class="close alert-close">×</a></div>
+          <%end%>
+        </div>
+      </div>
+    </div>
 
     <%= yield %>
 
