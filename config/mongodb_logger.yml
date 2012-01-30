@@ -4,5 +4,6 @@ production:
   host: staff.mongohq.com
   port: 10054
   replica_set: true
+  disable_file_logging: true
   username: <%= ENV['MONGODB_USERNAME'] %>
   password: <%= ENV['MONGODB_PASSWORD'] %>
