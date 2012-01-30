@@ -1,3 +1,20 @@
+GIT
+  remote: git://github.com/le0pard/mongodb_logger.git
+  revision: 6747b6597c753c28cd86f20f25b93090fe6d72f2
+  branch: master
+  specs:
+    mongodb_logger (0.2.6)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      bson_ext (~> 1.5.2)
+      erubis (>= 2.6.6)
+      i18n (>= 0.4.1)
+      json (~> 1.6.1)
+      mongo (~> 1.5.2)
+      rake (~> 0.9.0)
+      sinatra (>= 1.2.0)
+      vegas (~> 0.1.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -59,17 +76,6 @@ GEM
     mime-types (1.17.2)
     mongo (1.5.2)
       bson (= 1.5.2)
-    mongodb_logger (0.2.6)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      bson_ext (~> 1.5.2)
-      erubis (>= 2.6.6)
-      i18n (>= 0.4.1)
-      json (~> 1.6.1)
-      mongo (~> 1.5.2)
-      rake (~> 0.9.0)
-      sinatra (>= 1.2.0)
-      vegas (~> 0.1.2)
     multi_json (1.0.4)
     pg (0.12.2)
     polyglot (0.3.3)
@@ -139,7 +145,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   json
-  mongodb_logger (~> 0.2.6)
+  mongodb_logger!
   pg
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)

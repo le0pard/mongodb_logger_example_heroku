@@ -5,7 +5,7 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mongodb_logger', '~> 0.2.6'
+gem 'mongodb_logger', :git => 'git://github.com/le0pard/mongodb_logger.git', :branch => 'master'
 gem 'json'
 gem 'pg'
 gem "zurb-foundation"
