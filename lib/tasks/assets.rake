@@ -4,9 +4,11 @@ Rake.application.send(:eval, "@tasks.delete('assets:environment')")
 namespace :assets do
   task :environment do
     module ::MongodbLogger
-      module Base
-        def self.included(base)
-          puts "Skipping connection to Mongo DB"
+      module InitializerMixin
+        def create_logger(config)
+          logger = Logger.new(STDOUT)
+          logger.level = Logger.const_get(([ENV['LOG_LEVEL'].to_s.upcase, "INFO"] & %w[DEBUG INFO WARN ERROR FATAL UNKNOWN]).compact.first)
+          logger
         end
       end
     end
