@@ -4,5 +4,6 @@ production:
   host: ds029817.mongolab.com
   port: 29817
   replica_set: true
+  disable_file_logging: true
   username: <%= ENV['MONGODB_USERNAME'] %>
   password: <%= ENV['MONGODB_PASSWORD'] %>
