@@ -1,9 +1,8 @@
 production:
-  database: heroku_app2622107
-  capsize: <%= 20.megabytes %>
-  host: ds029817.mongolab.com
-  port: 29817
+  database: app2622107
+  capsize: <%= 10.megabytes %>
+  host: staff.mongohq.com
+  port: 10054
   replica_set: true
-  disable_file_logging: true
   username: <%= ENV['MONGODB_USERNAME'] %>
   password: <%= ENV['MONGODB_PASSWORD'] %>
