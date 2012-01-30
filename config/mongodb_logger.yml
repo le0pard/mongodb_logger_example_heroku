@@ -1,6 +1,6 @@
 production:
   database: heroku_app2622107
-  capsize: <%= 200.megabytes %>
+  capsize: <%= 20.megabytes %>
   host: ds029817.mongolab.com
   port: 29817
   replica_set: true
