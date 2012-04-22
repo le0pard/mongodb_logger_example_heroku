@@ -1,3 +1,7 @@
+development:
+  database: prodlogs
+  capsize: <%= 5.megabytes %>
+
 production:
   database: app2622107
   capsize: <%= 10.megabytes %>
