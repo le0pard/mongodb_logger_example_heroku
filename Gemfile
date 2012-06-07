@@ -1,11 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.5'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mongodb_logger', :git => 'git://github.com/le0pard/mongodb_logger.git', :branch => 'master'
+gem 'mongodb_logger', :git => 'git://github.com/le0pard/mongodb_logger.git', :branch => 'development'
 gem 'json'
 gem 'pg'
 gem "zurb-foundation"
