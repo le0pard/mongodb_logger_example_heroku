@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/le0pard/mongodb_logger.git
-  revision: 18f2989b127491dc04116c002c38f2cf7eca97cb
+  revision: 3b906cec131758b4357e34c6c47e275e2999c2d1
   branch: master
   specs:
-    mongodb_logger (0.3.0)
+    mongodb_logger (0.3.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
       bson_ext (>= 1.6.1)
