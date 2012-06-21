@@ -10,3 +10,4 @@ production:
   replica_set: true
   username: <%= ENV['MONGODB_USERNAME'] %>
   password: <%= ENV['MONGODB_PASSWORD'] %>
+  disable_file_logging: true
