@@ -6,6 +6,9 @@ class TestsController < ApplicationController
   
   def new
     Rails.logger.add_metadata(:additional_data => {:string => "some_data", :integer => 1, :boolean => true}) if Rails.logger.respond_to?(:add_metadata)
+    logger.warn "Warning about something!"
+    logger.debug "Debug about something!"
+    logger.error "Error about something!"
     flash[:notice] = "Information into log added. Check it on the web."
     redirect_to root_path
   end
