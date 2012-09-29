@@ -8,7 +8,6 @@ gem 'rails', '3.2.7'
 gem 'mongodb_logger', :git => 'git://github.com/le0pard/mongodb_logger.git', :branch => 'master'
 gem 'json'
 gem 'pg'
-gem "zurb-foundation"
 gem 'jquery-rails'
 
 # Gems used only for assets and not required
@@ -18,6 +17,7 @@ group :assets do
   gem 'coffee-rails', '>= 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'therubyracer'
+  gem 'zurb-foundation', '~> 2.2'
 end
 
 group :development do
