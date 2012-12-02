@@ -5,10 +5,15 @@ gem 'rails', '3.2.9'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mongodb_logger', :git => 'git://github.com/le0pard/mongodb_logger.git', :branch => 'master'
+gem 'mongo'
+gem 'bson_ext'
+gem 'moped'
+
+gem 'mongodb_logger', path: "../mongodb_logger"# :git => 'git://github.com/le0pard/mongodb_logger.git', :branch => 'master'
 gem 'json'
 gem 'pg'
 gem 'jquery-rails'
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
