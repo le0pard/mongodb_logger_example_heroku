@@ -9,7 +9,7 @@ gem 'mongo'
 gem 'bson_ext'
 gem 'moped'
 
-gem 'mongodb_logger', path: "../mongodb_logger"# :git => 'git://github.com/le0pard/mongodb_logger.git', :branch => 'master'
+gem 'mongodb_logger', :github => 'le0pard/mongodb_logger'
 gem 'json'
 gem 'pg'
 gem 'jquery-rails'
