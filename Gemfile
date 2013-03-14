@@ -1,15 +1,17 @@
 source 'http://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
+#gem 'rails',  :github => 'rails/rails'
 
 gem 'mongo'
 gem 'bson_ext'
 gem 'moped'
 
-gem 'mongodb_logger', :github => 'le0pard/mongodb_logger'
+gem 'mongodb_logger', :github => 'le0pard/mongodb_logger', branch: 'tests'
 gem 'json'
 gem 'pg'
 gem 'jquery-rails'
