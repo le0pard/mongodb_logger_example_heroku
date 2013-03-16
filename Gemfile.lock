@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/le0pard/mongodb_logger.git
-  revision: d39f7e7ab5403efc8d51bbb13b20a6f7e9d56476
+  revision: 4942f9d5a3ce6ecde41ea28f158dd4b9a1ddd098
   specs:
     mongodb_logger (0.5.1)
       actionpack (>= 3.1.0)
@@ -71,7 +71,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.21)
     moped (1.4.3)
-    multi_json (1.6.1)
+    multi_json (1.7.0)
     mustache (0.99.4)
     pg (0.14.1)
     polyglot (0.3.3)
