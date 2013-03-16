@@ -5,8 +5,8 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mongo'
-gem 'bson_ext'
+#gem 'mongo'
+#gem 'bson_ext'
 gem 'moped'
 
 gem 'mongodb_logger', :github => 'le0pard/mongodb_logger'
