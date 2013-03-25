@@ -11,7 +11,7 @@ gem 'rails', '3.2.13'
 #gem 'bson_ext'
 gem 'moped'
 
-gem 'mongodb_logger', :github => 'le0pard/mongodb_logger'
+gem 'mongodb_logger', github: 'le0pard/mongodb_logger'
 gem 'json'
 gem 'pg'
 gem 'jquery-rails'
