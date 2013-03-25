@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/le0pard/mongodb_logger.git
-  revision: 7e357a418b88eb8cc90cd5ef37b93ca50785030f
+  revision: 0ed09930244c5ac6cc93714bc86c0e0cc2ebb984
   specs:
     mongodb_logger (0.5.1)
       actionpack (>= 3.1.0)
@@ -14,7 +14,7 @@ GIT
       vegas (~> 0.1.0)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (3.2.13)
       actionpack (= 3.2.13)
