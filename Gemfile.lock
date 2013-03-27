@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/le0pard/mongodb_logger.git
-  revision: 1baab9150b95dc42de4643f976300bc150c164e3
+  revision: fb2f505137e80092a3092dd799cf5aac8822208c
   specs:
     mongodb_logger (0.5.1)
       actionpack (>= 3.1.0)
