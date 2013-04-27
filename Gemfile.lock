@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/le0pard/mongodb_logger.git
-  revision: 8897159f9d57e8953a51f279f7e37c8ec1cf1ab3
+  revision: d96b7963a6a9a1c7a24a52d33eb58e2852aea413
   specs:
     mongodb_logger (0.5.2)
       actionpack (>= 3.1.0)
@@ -69,7 +69,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.22)
+    mime-types (1.23)
     moped (1.4.5)
     multi_json (1.7.2)
     mustache (0.99.4)
@@ -102,7 +102,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
-    sass (3.2.7)
+    sass (3.2.8)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
