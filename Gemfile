@@ -21,8 +21,6 @@ gem 'coffee-rails', '>= 3.2.1'
 gem 'uglifier', '>= 1.0.3'
 gem 'therubyracer', '>= 0.10.2'
 
-gem 'rails_12factor', group: :production
-
 
 group :development do
   gem 'sqlite3'
