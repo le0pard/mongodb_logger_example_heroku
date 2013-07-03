@@ -1,9 +1,10 @@
 development:
   url: mongodb://localhost:27017/prodlogs
   capsize: <%= 5.megabytes %>
-
+<%= if ENV['MONGODB_USERNAME'] && ENV['MONGODB_PASSWORD'] %>
 production:
   url: mongodb://<%= ENV['MONGODB_USERNAME'] %>:<%= ENV['MONGODB_PASSWORD'] %>@staff.mongohq.com:10054/app2622107
   capsize: <%= 10.megabytes %>
   replica_set: true
   disable_file_logging: true
+<% end %>
