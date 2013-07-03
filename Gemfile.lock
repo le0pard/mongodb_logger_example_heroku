@@ -50,9 +50,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
-    daemons (1.1.9)
     erubis (2.7.0)
-    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.3)
@@ -61,6 +59,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
+    kgio (2.8.0)
     libv8 (3.11.8.17)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -90,6 +89,7 @@ GEM
       activesupport (= 4.0.0)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
+    raindrops (0.11.0)
     rake (10.1.0)
     ref (1.0.5)
     sass (3.2.9)
@@ -114,10 +114,6 @@ GEM
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
-    thin (1.5.1)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
     thor (0.18.1)
     thread_safe (0.1.0)
       atomic
@@ -129,6 +125,10 @@ GEM
     uglifier (2.1.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    unicorn (4.6.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
     vegas (0.1.11)
       rack (>= 1.0.0)
 
@@ -146,5 +146,5 @@ DEPENDENCIES
   sass-rails (>= 3.2.3)
   sqlite3
   therubyracer (>= 0.10.2)
-  thin
   uglifier (>= 1.0.3)
+  unicorn
