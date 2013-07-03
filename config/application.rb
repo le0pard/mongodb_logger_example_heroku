@@ -41,6 +41,6 @@ module ExampleMongodbLogger
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    Rails.logger = config.logger = create_logger(config) if ENV['MONGODB_USERNAME'] && ENV['MONGODB_PASSWORD']
+    Rails.logger = config.logger = create_logger(config)
   end
 end
