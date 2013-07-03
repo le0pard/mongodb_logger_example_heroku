@@ -1,5 +1,12 @@
 require 'mongodb_logger/server' # required
 
+logger = MongodbLogger::Logger.new(nil, Rails.logger.level)
+# decorating with TaggedLogging
+logger = MongodbLogger::TaggedLogger.new(logger) if defined?(ActiveSupport::TaggedLogging)
+logger.level = Rails.logger.level
+
+Rails.logger = logger
+
 # callback for errors
 
 MongodbLogger::Base.configure do |config|
