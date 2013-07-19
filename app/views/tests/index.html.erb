@@ -4,7 +4,7 @@
 				<div class="logger-header">
 					<h1>MongodbLogger Example</h1>
 					<h4 class="subheader">
-					  It's Rails 3 application with MongodbLogger gem. Here you can see how it woks and how you can use it.
+            It's Rails 3 application with MongodbLogger gem. Here you can see how it woks and how you can use it.
 					</h4>
 				</div>
 			</div>
@@ -19,12 +19,12 @@
       		<p>Here you can see MongodbLogger Web panel. After each refresh of this page will be added new log record in MongoDB..</p>
       		<p>Login: <strong>demo</strong> Password: <strong>password</strong></p>
       		<p>
-      		  <%=link_to "MongodbLogger Web", mongodb_path, :class => "nice radius green button mobile src-download" %>
+      		  <%=link_to "MongodbLogger Web", mongodb_url(user: 'demo', password: 'password'), :class => "nice radius green button mobile src-download" %>
       		</p>
       	</div>
       </div>
     </div>
-    
+
     <div class="row">
 			<div class="ten columns centered">
       	<div class="panel">
@@ -35,16 +35,16 @@
       		</p>
       		<p>After click on this button, in log will be added hash "{:string => "some_data", :integer => 1, :boolean => true}" by key "additional_data".</p>
       		<p>
-      		  You can filter such data like this: 
-      		  <a href="/mongodb/overview?filter%5Bcontroller%5D=&filter%5Baction%5D=&filter%5Blimit%5D=100&filter%5Bapplication_name%5D=&filter%5Bip%5D=&filter%5Bmore%5D%5B%5D%5Btype%5D=boolean&filter%5Bmore%5D%5B%5D%5Bkey%5D=additional_data&filter%5Bmore%5D%5B%5D%5Bcondition%5D=exists&filter%5Bmore%5D%5B%5D%5Bvalue%5D=true&submit=Filter">Example 1</a>, 
+      		  You can filter such data like this:
+      		  <a href="/mongodb/overview?filter%5Bcontroller%5D=&filter%5Baction%5D=&filter%5Blimit%5D=100&filter%5Bapplication_name%5D=&filter%5Bip%5D=&filter%5Bmore%5D%5B%5D%5Btype%5D=boolean&filter%5Bmore%5D%5B%5D%5Bkey%5D=additional_data&filter%5Bmore%5D%5B%5D%5Bcondition%5D=exists&filter%5Bmore%5D%5B%5D%5Bvalue%5D=true&submit=Filter">Example 1</a>,
       		  <a href="/mongodb/overview?filter%5Bcontroller%5D=&filter%5Baction%5D=&filter%5Blimit%5D=100&filter%5Bapplication_name%5D=&filter%5Bip%5D=&filter%5Bmore%5D%5B%5D%5Btype%5D=string&filter%5Bmore%5D%5B%5D%5Bkey%5D=additional_data.string&filter%5Bmore%5D%5B%5D%5Bcondition%5D=equals&filter%5Bmore%5D%5B%5D%5Bvalue%5D=some_data&submit=Filter">Example 2</a>,
-      		  <a href="/mongodb/overview?filter%5Bcontroller%5D=&filter%5Baction%5D=&filter%5Blimit%5D=100&filter%5Bapplication_name%5D=&filter%5Bip%5D=&filter%5Bmore%5D%5B%5D%5Btype%5D=integer&filter%5Bmore%5D%5B%5D%5Bkey%5D=additional_data.integer&filter%5Bmore%5D%5B%5D%5Bcondition%5D=equals&filter%5Bmore%5D%5B%5D%5Bvalue%5D=1&submit=Filter">Example 3</a>, 
-      		  <a href="/mongodb/overview?filter%5Bcontroller%5D=&filter%5Baction%5D=&filter%5Blimit%5D=100&filter%5Bapplication_name%5D=&filter%5Bip%5D=&filter%5Bmore%5D%5B%5D%5Btype%5D=boolean&filter%5Bmore%5D%5B%5D%5Bkey%5D=additional_data.boolean&filter%5Bmore%5D%5B%5D%5Bcondition%5D=equals&filter%5Bmore%5D%5B%5D%5Bvalue%5D=true&submit=Filter">Example 4</a>.      		  
+      		  <a href="/mongodb/overview?filter%5Bcontroller%5D=&filter%5Baction%5D=&filter%5Blimit%5D=100&filter%5Bapplication_name%5D=&filter%5Bip%5D=&filter%5Bmore%5D%5B%5D%5Btype%5D=integer&filter%5Bmore%5D%5B%5D%5Bkey%5D=additional_data.integer&filter%5Bmore%5D%5B%5D%5Bcondition%5D=equals&filter%5Bmore%5D%5B%5D%5Bvalue%5D=1&submit=Filter">Example 3</a>,
+      		  <a href="/mongodb/overview?filter%5Bcontroller%5D=&filter%5Baction%5D=&filter%5Blimit%5D=100&filter%5Bapplication_name%5D=&filter%5Bip%5D=&filter%5Bmore%5D%5B%5D%5Btype%5D=boolean&filter%5Bmore%5D%5B%5D%5Bkey%5D=additional_data.boolean&filter%5Bmore%5D%5B%5D%5Bcondition%5D=equals&filter%5Bmore%5D%5B%5D%5Bvalue%5D=true&submit=Filter">Example 4</a>.
       		</p>
       	</div>
       </div>
     </div>
-    
+
     <div class="row">
 			<div class="ten columns centered">
       	<div class="panel">
@@ -57,7 +57,7 @@
       	</div>
       </div>
     </div>
-    
+
     <div class="row">
 			<div class="ten columns centered">
       	<div class="panel">
@@ -78,16 +78,16 @@
             <% end %>
       		</p>
       		<p>
-      		  After submit this form you can look how MongoDB log this params. 
-      		  Password in filter_parameters, so it's will be filtered also in logs. 
+      		  After submit this form you can look how MongoDB log this params.
+      		  Password in filter_parameters, so it's will be filtered also in logs.
       		  Attachment will log like hash with "original_filename" and "content_type" keys.
       		</p>
       	</div>
       </div>
     </div>
-    
-    
-    
+
+
+
     <footer class="row">
 	    <section class="centered twelve columns">
 	      <ul class="block-grid three-up">
@@ -97,6 +97,6 @@
 	      </ul>
 	    </section>
     </footer>
-    
+
 </div>
 
