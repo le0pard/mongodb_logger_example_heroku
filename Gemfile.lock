@@ -69,6 +69,7 @@ GEM
     moped (1.5.0)
     multi_json (1.7.7)
     mustache (0.99.4)
+    newrelic_rpm (3.6.6.147)
     pg (0.16.0)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -141,6 +142,7 @@ DEPENDENCIES
   json
   mongodb_logger!
   moped
+  newrelic_rpm
   pg
   rails (= 4.0.0)
   sass-rails (>= 3.2.3)
