@@ -1,6 +1,6 @@
-#pt = Rake::Task['assets:environment']
-#Rake.application.send(:eval, "@tasks.delete('assets:environment')")
-=begin
+pt = Rake::Task['assets:environment']
+Rake.application.send(:eval, "@tasks.delete('assets:environment')")
+
 namespace :assets do
   task :environment do
     module ::MongodbLogger
@@ -16,4 +16,3 @@ namespace :assets do
     pt.execute
   end
 end
-=end
