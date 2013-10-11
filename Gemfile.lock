@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/le0pard/mongodb_logger.git
-  revision: 20d63fc863b378a417eae64c83aaeb9abd40dd42
+  revision: c807298a71e77e68f4901d15a563fdd24ceea579
   specs:
-    mongodb_logger (0.6.1)
+    mongodb_logger (0.6.2)
       actionpack (>= 3.1.0)
       activesupport (>= 3.1.0)
       erubis (>= 2.7.0)
@@ -12,6 +12,14 @@ GIT
       sinatra (>= 1.3.0)
       sprockets (>= 2.0.0)
       vegas (~> 0.1.0)
+
+GIT
+  remote: git://github.com/mongoid/moped.git
+  revision: 8ac498c5b077051508249e86f9e071e5ebf13bf8
+  specs:
+    moped (2.0.0.beta2)
+      bson (~> 2.0.0.rc2)
+      optionable (~> 0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -41,7 +49,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.0)
-    atomic (1.1.13)
+    atomic (1.1.14)
+    bson (2.0.0.rc2)
+    bson_ext (1.5.1)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -51,25 +61,24 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     erubis (2.7.0)
-    execjs (2.0.1)
+    execjs (2.0.2)
     hike (1.2.3)
     i18n (0.6.5)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
-    kgio (2.8.0)
+    kgio (2.8.1)
     libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25)
     minitest (4.7.5)
-    moped (1.5.1)
-    multi_json (1.7.9)
+    multi_json (1.8.1)
     mustache (0.99.4)
-    newrelic_rpm (3.6.6.147)
-    pg (0.16.0)
+    optionable (0.1.1)
+    pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -89,10 +98,10 @@ GEM
       activesupport (= 4.0.0)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    raindrops (0.11.0)
+    raindrops (0.12.0)
     rake (10.1.0)
     ref (1.0.5)
-    sass (3.2.10)
+    sass (3.2.12)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
       sass (>= 3.1.10)
@@ -115,13 +124,13 @@ GEM
       libv8 (~> 3.16.14.0)
       ref
     thor (0.18.1)
-    thread_safe (0.1.2)
+    thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.37)
+    tzinfo (0.3.38)
     uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
@@ -136,12 +145,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext
   coffee-rails (>= 3.2.1)
   jquery-rails
   json
   mongodb_logger!
-  moped
-  newrelic_rpm
+  moped!
   pg
   rails (= 4.0.0)
   sass-rails (>= 3.2.3)
