@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-ruby '2.2.1'
+ruby '2.2.2'
 
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.3'
 
 # Bundle edge Rails instead:
 #gem 'rails',  :github => 'rails/rails'
 
-#gem 'mongo', '>= 2.0'
-gem 'moped', github: 'mongoid/moped'
+gem 'mongo', '>= 2.0'
+#gem 'moped', github: 'mongoid/moped'
 gem 'bson_ext'
 
 gem 'mongodb_logger', path: '../mongodb_logger' #github: 'le0pard/mongodb_logger'
